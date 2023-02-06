@@ -65,5 +65,22 @@
                 <td>10 days</td>
             </tr>
         </table>
+        <hr>
+        <h2>Code Display</h2>
+        <blockquote cite="https://css-tricks.com/snippets/php/test-if-string-starts-with-certain-characters-in-php/">Testing to see if String starts with certain characters in PHP</blockquote>
+        <pre>
+            <?php
+
+            function startsWith($string, $startString) {
+                $len = strlen($startString);
+                return (substr($string, 0, $len) === $startString);
+            }
+
+            // usage
+            echo startsWith("cat", "c");
+            echo startsWith("dog", "x");
+
+            ?>
+        </pre>
     </body>
 </html>
